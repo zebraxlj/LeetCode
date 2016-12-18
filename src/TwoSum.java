@@ -1,20 +1,10 @@
 package src;
+
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
 public class TwoSum {
-    public static void main(String[] args){
-        // int[] nums = {2, 7, 11, 15};
-        // int target = 9;
-        int[] nums = {2,4,3};
-        int target = 6;
-        Solution sol = new Solution();
-        System.out.println(Arrays.toString(sol.approach_1(nums, target)));
-        System.out.println(Arrays.toString(sol.approach_2(nums, target)));
-    }
-}
-class Solution {
     public int[] twoSum(int[] nums, int target){
         return approach_1(nums, target);
     }
@@ -79,4 +69,13 @@ class Solution {
         throw new IllegalArgumentException("No two sum solution");
     }
 
+    public static void main(String[] args){
+        // int[] nums = {2, 7, 11, 15};
+        // int target = 9;
+        int[] nums = {2,4,3};
+        int target = 6;
+        TwoSum sol = new TwoSum();
+        System.out.println(Arrays.toString(sol.approach_1(nums, target)));
+        System.out.println(Arrays.toString(sol.approach_2(nums, target)));
+    }
 }

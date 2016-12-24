@@ -9,7 +9,6 @@ public class ReverseInteger {
             int old = ret;
             ret = ret * 10 + tail;
             if ((ret - tail)/10 != old){return 0;}
-//            System.out.println(ret);
             x /= 10;
         }
         return ret;
